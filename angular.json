@@ -25,7 +25,21 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/css/normalize.css"
+              "src/assets/css/normalize.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/fontello.css",
+              "src/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css",
+              "src/assets/fonts/icon-7-stroke/css/helper.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/bootstrap-select.min.css",
+              "src/assets/bootstrap/css/bootstrap.min.css",
+              "src/assets/css/icheck.min_all.css",
+              "src/assets/css/price-range.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/owl.transitions.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/style.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -35,6 +49,19 @@
               "node_modules/moment/moment.js",
               "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
               "node_modules/bootstrap-notify/bootstrap-notify.js",
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/modernizr-2.6.2.min.js",
+              "src/assets/bootstrap/js/bootstrap.min.js",
+              "src/assets/js/bootstrap-select.min.js",
+              "src/assets/js/bootstrap-hover-dropdown.js",
+              "src/assets/js/easypiechart.min.js",
+              "src/assets/js/jquery.easypiechart.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/wow.js",
+              "src/assets/js/icheck.min.js",
+              "src/assets/js/price-range.js",
+              "src/assets/js/main.js",
+              "src/assets/js/owl.carousel.min.js",
               "node_modules/chartist/dist/chartist.js"
             ]
           },
