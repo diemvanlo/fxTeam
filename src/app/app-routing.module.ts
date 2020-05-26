@@ -8,10 +8,10 @@ import {NgModule} from "@angular/core";
 const routes: Routes = [
   {
     path: '', component: HomepageComponent,
-    children: [{
-      path: '',
-      loadChildren: './layouts/admin-layout/routing.module#RoutingModule'
-    }]
+    // children: [{
+    //   path: '',
+    //   loadChildren: './homepage/routing.module#RoutingModule'
+    // }]
   },
   {
     path: 'login', component: LoginComponent,
