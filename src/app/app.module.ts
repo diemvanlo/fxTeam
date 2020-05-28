@@ -8,6 +8,15 @@ import { LoginComponent } from './components/login/login.component';
 import { HeaderNavbarComponent } from './layouts/header-navbar/header-navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { PropertiesComponent } from './components/properties/properties.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { NewsComponent } from './components/news/news.component';
+import { UserPropertiesComponent } from './components/user-properties/user-properties.component';
+import { DealPropertiesComponent } from './components/deal-properties/deal-properties.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { SinglePostComponent } from './components/single-post/single-post.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { PropertyComponent } from './components/property/property.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +25,16 @@ import { PropertiesComponent } from './components/properties/properties.componen
         LoginComponent,
         HeaderNavbarComponent,
         FooterComponent,
-        PropertiesComponent
+        PropertiesComponent,
+        ContactComponent,
+        NewsComponent,
+        UserPropertiesComponent,
+        DealPropertiesComponent,
+        UserProfileComponent,
+        SignUpComponent,
+        SinglePostComponent,
+        AdminLayoutComponent,
+        PropertyComponent
     ],
     imports: [
         BrowserModule, AppRoutingModule

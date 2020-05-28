@@ -35,66 +35,81 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            <a class="navbar-brand" routerLink="/"><img src="assets/img/logo.png" alt=""></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse yamm" id="navigation">
             <div class="button navbar-right">
-                <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.45s">Đăng nhập</button>
-                <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.48s">Đăng xuất</button>
+                <button class="navbar-btn nav-button wow bounceInRight login" routerLink="/login"
+                        data-wow-delay="0.45s">Đăng nhập
+                </button>
+                <button class="navbar-btn nav-button wow fadeInRight" routerLink="/register"
+                        data-wow-delay="0.48s">Đăng xuất
+                </button>
             </div>
             <ul class="main-nav nav navbar-nav navbar-right">
-                <li class="dropdown ymm-sw " data-wow-delay="0.1s">
-                    <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Sản Phẩm<b class="caret"></b></a>
-                    <ul class="dropdown-menu navbar-nav">
+                <li class="dropdown yamm-fw" data-wow-delay="0.1s">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">
+                        Sản phẩm<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
                         <li>
-                            <a href="index-2.html"> Nhà riêng</a>
-                        </li>
-                        <li>
-                            <a href="index-3.html"> Căn hộ</a>
-                        </li>
-                        <li>
-                            <a href="index-4.html"> Đất nền</a>
-                        </li>
-                        <li>
-                            <a href="index-5.html"> Đất nền dự án</a>
-                        </li>
-
-                    </ul>
-                </li>
-                <li class="dropdown ymm-sw " data-wow-delay="0.1s">
-                    <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thuê<b class="caret"></b></a>
-                    <ul class="dropdown-menu navbar-nav">
-                        <li>
-                            <a href="index-2.html"> Nhà riêng</a>
-                        </li>
-                        <li>
-                            <a href="index-3.html"> Căn hộ</a>
-                        </li>
-                        <li>
-                            <a href="index-4.html"> Mặt bằng</a>
-                        </li>
-                        
-
-                    </ul>
-                </li>
-                <li class="dropdown ymm-sw " data-wow-delay="0.1s">
-                    <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Dự án<b class="caret"></b></a>
-                    <ul class="dropdown-menu navbar-nav">
-                        <li>
-                            <a href="index-2.html"> Nhà chung cư</a>
-                        </li>
-                        <li>
-                            <a href="index-3.html"> Đất nền</a>
+                            <div class="yamm-content">
+                                <div class="row">
+                                    <div class="col-sm-offset-3 col-sm-3">
+                                        <h5>Dự án</h5>
+                                        <ul>
+                                            <li>
+                                                <a routerLink="/properties">Nhà riêng</a>
+                                            </li>
+                                            <li>
+                                                <a routerLink="/properties">Căn hộ</a>
+                                            </li>
+                                            <li>
+                                                <a routerLink="/properties">Đất nền</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h5>Cho thuê</h5>
+                                        <ul>
+                                            <li><a routerLink="/properties">Nhà riêng</a></li>
+                                            <li><a routerLink="/properties">Chung cư</a></li>
+                                            <li><a routerLink="/properties">Mặt bằng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.yamm-content -->
                         </li>
                     </ul>
                 </li>
 
-                <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="" href="properties.html">Tin tức bất động sản</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">Trung tâm  giao  dịch</a></li>               
-                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="contact.html">Tuyển dụng</a></li>
-                <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="contact.html">Kí gửi  bất động sản</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="" routerLink="/news">Tin tức</a>
+                </li>
+                <li class="dropdown ymm-sw " data-wow-delay="0.1s">
+                    <a routerLink="/post" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown"
+                       data-delay="200">Giới thiệu<b class="caret"></b></a>
+                    <ul class="dropdown-menu navbar-nav">
+                        <li>
+                            <a  routerLink="/post" >Giới thiệu chung</a>
+                        </li>
+                        <li>
+                            <a routerLink="/post" >Nền tảng tâm nhìn</a>
+                        </li>
+                        <li>
+                            <a  routerLink="/post" >Đội ngũ lãnh đạo</a>
+                        </li>
+                        <li>
+                            <a  routerLink="/post" >Sơ đồ tổ chức</a>
+                        </li>
+                        <li>
+                            <a href="index-3.html">Trung tâm giao dịch</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="wow fadeInDown" data-wow-delay="0.5s"><a routerLink="/contact">Liên hệ</a></li>
+                <li class="wow fadeInDown" data-wow-delay="0.5s"><a routerLink="/deal/property">Kí gửi</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
