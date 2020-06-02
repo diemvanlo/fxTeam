@@ -18,8 +18,7 @@ import {DealPropertiesComponent} from "../../components/deal-properties/deal-pro
 
 
 @NgModule({
-    declarations: [ContactComponent, PropertiesComponent, DealPropertiesComponent,
-        NewsComponent, UserPropertiesComponent, UserProfileComponent],
+    declarations: [],
     imports: [
         CommonModule,
         RouterModule.forChild(AdminLayoutRoutes),
