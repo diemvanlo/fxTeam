@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, NgModule, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {MatFormFieldModule, MatInputModule} from '@angular/material';
+
 
 @Component({
   selector: 'app-deal-properties',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./deal-properties.component.css']
 })
 export class DealPropertiesComponent implements OnInit {
+  firstFormGroup: FormGroup;
+  secondFormGroup: FormGroup;
+  isOptional = false;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.firstFormGroup = this.formBuilder.group({
+      firstCtrl: ['', Validators.required]
+    });
+    this.secondFormGroup = this.formBuilder.group({
+      secondCtrl: ''
+    });
   }
-
 }

@@ -13,6 +13,7 @@ import {UserPropertiesComponent} from "./components/user-properties/user-propert
 import {UserProfileComponent} from "./components/user-profile/user-profile.component";
 import {PropertyComponent} from "./components/property/property.component";
 
+
 const routes: Routes = [
     {
         path: '', component: AdminLayoutComponent,
@@ -38,7 +39,7 @@ const routes: Routes = [
             path: 'register', component: SignUpComponent,
         }, {
             path: 'post', component: SinglePostComponent,
-        }
+        },
         ]
     }
 ];
