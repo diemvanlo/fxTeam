@@ -12,6 +12,7 @@ import {NewsComponent} from "./components/news/news.component";
 import {UserPropertiesComponent} from "./components/user-properties/user-properties.component";
 import {UserProfileComponent} from "./components/user-profile/user-profile.component";
 import {PropertyComponent} from "./components/property/property.component";
+import {VrImgageComponent} from "./layouts/vr-imgage/vr-imgage.component";
 
 
 const routes: Routes = [
@@ -39,6 +40,8 @@ const routes: Routes = [
             path: 'register', component: SignUpComponent,
         }, {
             path: 'post', component: SinglePostComponent,
+        },{
+            path: 'vr', component: VrImgageComponent,
         },
         ]
     }

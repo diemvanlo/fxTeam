@@ -17,43 +17,53 @@ import {SignUpComponent} from './components/sign-up/sign-up.component';
 import {SinglePostComponent} from './components/single-post/single-post.component';
 import {AdminLayoutComponent} from './layouts/admin-layout/admin-layout.component';
 import {PropertyComponent} from './components/property/property.component';
-import {MatButtonModule, MatFormFieldControl, MatFormFieldModule, MatIconModule, MatStepperModule} from '@angular/material';
+import {
+    MatButtonModule,
+    MatFormFieldControl,
+    MatFormFieldModule,
+    MatIconModule,
+    MatStepperModule
+} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {DemoMaterialModule} from './material-module';
+import {NgxView360Module} from "ngx-view360";
+import { VrImgageComponent } from './layouts/vr-imgage/vr-imgage.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    LoginComponent,
-    HeaderNavbarComponent,
-    FooterComponent,
-    PropertiesComponent,
-    ContactComponent,
-    NewsComponent,
-    UserPropertiesComponent,
-    DealPropertiesComponent,
-    UserProfileComponent,
-    SignUpComponent,
-    SinglePostComponent,
-    AdminLayoutComponent,
-    PropertyComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatStepperModule,
-    FormsModule,
-    MatIconModule,
-    MatButtonModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    DemoMaterialModule,
-    ReactiveFormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomepageComponent,
+        LoginComponent,
+        HeaderNavbarComponent,
+        FooterComponent,
+        PropertiesComponent,
+        ContactComponent,
+        NewsComponent,
+        UserPropertiesComponent,
+        DealPropertiesComponent,
+        UserProfileComponent,
+        SignUpComponent,
+        SinglePostComponent,
+        AdminLayoutComponent,
+        PropertyComponent,
+        VrImgageComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatStepperModule,
+        FormsModule,
+        MatIconModule,
+        MatButtonModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        DemoMaterialModule,
+        ReactiveFormsModule, NgxView360Module
+
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

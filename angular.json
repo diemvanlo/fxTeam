@@ -58,7 +58,10 @@
               "src/assets/js/icheck.min.js",
               "src/assets/js/price-range.js",
               "src/assets/js/main.js",
+              "src/assets/js/three/three.min.js",
+              "src/assets/js/panolens/panolens.min.js",
               "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/view360.panoviewer.pkgd.min.js",
               "node_modules/bootstrap-notify/bootstrap-notify.js",
               "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
               "node_modules/chartist/dist/chartist.js"
