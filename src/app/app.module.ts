@@ -50,16 +50,7 @@ import { VrImgageComponent } from './layouts/vr-imgage/vr-imgage.component';
         VrImgageComponent,
     ],
     imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MatStepperModule,
-        FormsModule,
-        MatIconModule,
-        MatButtonModule,
-        BrowserAnimationsModule,
-        MatFormFieldModule,
         DemoMaterialModule,
-        ReactiveFormsModule, NgxView360Module
 
     ],
     providers: [],

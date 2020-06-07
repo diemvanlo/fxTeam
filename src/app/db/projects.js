@@ -16,9 +16,6 @@
       "address": "246 Hải Châu",
       "acreage": "10 ha",
       "price": "500",
-      "startDay": "03/03/2020",
-      "stopDay": "12/06/2022",
-      "status" : "đã hoàn thành",
       "image": "hinh2.jpg"
   },
   ]
