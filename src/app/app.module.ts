@@ -29,6 +29,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {DemoMaterialModule} from './material-module';
 import {NgxView360Module} from "ngx-view360";
 import { VrImgageComponent } from './layouts/vr-imgage/vr-imgage.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -51,7 +52,7 @@ import { VrImgageComponent } from './layouts/vr-imgage/vr-imgage.component';
     ],
     imports: [
         DemoMaterialModule,
-
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

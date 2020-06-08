@@ -55,208 +55,32 @@
 
                 <div class="section clear">
                     <div id="list-type" class="proerty-th">
-                        <div class="col-sm-6 col-md-4 p0">
+                        <div class="col-sm-6 col-md-4 p0" *ngFor="let product of products">
                             <div class="box-two proerty-item">
                                 <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-3.jpg"></a>
+                                    <a routerLink="/properties/property">
+                                        <img src="{{'assets/img/demo/' + product.image}}">
+                                    </a>
                                 </div>
 
                                 <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
+                                    <h5><a routerLink="/properties/property"> {{product.name}} </a></h5>
                                     <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
+                                    <span class="pull-left"><b> Area :</b> {{product.area}}  m2 </span>
+                                    <span class="proerty-price pull-right"> $ {{product.price}}</span>
+                                    <p style="display: none;">{{product.description}}</p>
                                     <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-2.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
+                                        <img src="assets/img/icon/bed.png">{{product.beds}}|
+                                        <img src="assets/img/icon/shawer.png">{{product.baths}}|
+                                        <img src="assets/img/icon/cars.png">{{product.gara}}
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-1.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-3.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-1.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-2.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-3.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-2.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html"><img src="assets/img/demo/property-1.jpg"></a>
-                                </div>
-
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b> Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right"> $ 300,000</span>
-                                    <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis
-                                        dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
-                                    <div class="property-icon">
-                                        <img src="assets/img/icon/bed.png">(5)|
-                                        <img src="assets/img/icon/shawer.png">(2)|
-                                        <img src="assets/img/icon/cars.png">(1)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+
                 <div class="section">
                     <div class="pull-right">
                         <div class="pagination">
@@ -319,12 +143,12 @@
                                 <fieldset class="padding-5">
                                     <div class="row">
                                         <div class="col-xs-6">
-                                            <label >Giá tiền (vnđ) :</label>
+                                            <label>Giá tiền (vnđ) :</label>
                                             <ng5-slider [(value)]="valuePrice" [(highValue)]="higValuePrice"
                                                         [options]="optionsPrice"></ng5-slider>
                                         </div>
                                         <div class="col-xs-6">
-                                            <label >Diện tích (m2) :</label>
+                                            <label>Diện tích (m2) :</label>
                                             <ng5-slider [(value)]="valueArea" [(highValue)]="higValueArea"
                                                         [options]="optionsArea"></ng5-slider>
                                         </div>

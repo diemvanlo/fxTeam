@@ -1,8 +1,10 @@
 import {Component, EventEmitter, OnInit} from '@angular/core';
 import {LabelType, Options} from "ng5-slider";
+import {HttpServiceService} from "../../service/http-service.service";
 
 
 declare var $: any;
+const PRODUCT_API = "http://localhost:3000/product";
 
 @Component({
     selector: 'app-properties',
@@ -10,14 +12,14 @@ declare var $: any;
     styleUrls: ['./properties.component.css']
 })
 export class PropertiesComponent implements OnInit {
-    constructor() {
+    constructor(private userService: HttpServiceService) {
     }
 
     valuePrice: number = 100;
     higValuePrice: number = 300;
     optionsPrice: Options = {
-        floor: 0,
-        ceil: 500,
+        floor: 100,
+        ceil: 10000,
         hideLimitLabels: true,
         translate: (value: number, label: LabelType): string => {
             switch (label) {
@@ -34,7 +36,7 @@ export class PropertiesComponent implements OnInit {
     valueArea: number = 100;
     higValueArea: number = 300;
     optionsArea: Options = {
-        floor: 0,
+        floor: 50,
         ceil: 1000,
         hideLimitLabels: true,
         translate: (value: number, label: LabelType): string => {
@@ -48,6 +50,8 @@ export class PropertiesComponent implements OnInit {
             }
         }
     };
+    products: Array<any>;
+
     ngOnInit(): void {
         $(document).ready(function () {
             console.log("testing");
@@ -68,6 +72,11 @@ export class PropertiesComponent implements OnInit {
                 $('#list-type').addClass('proerty-th-list');
                 $('#list-type').removeClass('proerty-th');
             });
+        });
+
+        this.userService.getAll(PRODUCT_API).subscribe(data => {
+            this.products = data;
+            console.log(data);
         });
     }
 
