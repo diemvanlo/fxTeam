@@ -49,6 +49,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NgxView360Module} from "ngx-view360";
 import {Ng5SliderModule} from 'ng5-slider';
 import {HttpClient} from "@angular/common/http";
+import {NgbPaginationModule} from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
     exports: [
@@ -111,7 +112,9 @@ import {HttpClient} from "@angular/common/http";
         MatSidenavModule,
         MatSliderModule,
         MatSlideToggleModule,
-        MatSnackBarModule, Ng5SliderModule,
+        MatSnackBarModule,
+        Ng5SliderModule,
+        NgbPaginationModule,
         MatFormFieldModule
     ]
 })

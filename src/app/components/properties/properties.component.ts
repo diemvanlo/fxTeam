@@ -51,6 +51,7 @@ export class PropertiesComponent implements OnInit {
         }
     };
     products: Array<any>;
+    page = 1;
 
     ngOnInit(): void {
         $(document).ready(function () {

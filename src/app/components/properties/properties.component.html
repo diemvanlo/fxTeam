@@ -52,10 +52,15 @@
                         <a class="layout-grid active" href="javascript:void(0);"> <i class="fa fa-th"></i> </a>
                     </div><!--/ .layout-switcher-->
                 </div>
-
+                <ngb-pagination [collectionSize]="100" [maxSize]="5" [pageSize]="12"
+                                [(page)]="page" aria-label="Custom pagination">
+                    <ng-template ngbPaginationPrevious>Prev</ng-template>
+                    <ng-template ngbPaginationNext>Next</ng-template>
+                </ngb-pagination>
                 <div class="section clear">
                     <div id="list-type" class="proerty-th">
-                        <div class="col-sm-6 col-md-4 p0" *ngFor="let product of products">
+                        <div class="col-sm-6 col-md-4 p0" *ngFor="let product of products | slice: (page-1) * 12:
+                     (page-1) * 12 + 12">
                             <div class="box-two proerty-item">
                                 <div class="item-thumb">
                                     <a routerLink="/properties/property">
@@ -80,21 +85,12 @@
 
                     </div>
                 </div>
+                <ngb-pagination [collectionSize]="100" [maxSize]="5" [pageSize]="12"
+                                [(page)]="page" aria-label="Custom pagination">
+                    <ng-template ngbPaginationPrevious>Prev</ng-template>
+                    <ng-template ngbPaginationNext>Next</ng-template>
+                </ngb-pagination>
 
-                <div class="section">
-                    <div class="pull-right">
-                        <div class="pagination">
-                            <ul>
-                                <li><a href="#">Prev</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">Next</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col-md-3 pl0 padding-top-40">
                 <div class="blog-asside-right pl0">
