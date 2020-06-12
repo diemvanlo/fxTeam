@@ -62,6 +62,8 @@
               "src/assets/js/panolens/panolens.min.js",
               "src/assets/js/owl.carousel.min.js",
               "src/assets/js/view360.panoviewer.pkgd.min.js",
+              "src/assets/pano2vr_player.js",
+              "src/assets/skin.js",
               "node_modules/bootstrap-notify/bootstrap-notify.js",
               "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
               "node_modules/chartist/dist/chartist.js"
