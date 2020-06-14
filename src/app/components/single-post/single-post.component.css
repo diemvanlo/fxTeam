@@ -1,3 +1,43 @@
 .cvuldaohai{
   font-size: 10px;;
 }
+
+.namtnhin{
+  display: inline-block;
+  width: 100%;
+  top: 70px;
+  left: 0;
+}
+.namtnhin ul{
+  border-bottom: 2px solid #D67140;
+  margin-left: -29px;
+}
+
+.namtnhin ul li:last-child{
+  background: #D67140;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: sfm;
+  padding: 5px 20px 2px 30px;
+  display: inline-block;
+  color: #fff;
+  margin-left: 30px;
+  height: initial;
+}
+
+.namtnhin ul li{
+  padding: 0;
+  display: inline-block;
+  height: 100%;
+  width: 78px;
+  text-align: center;
+  margin-left: -21px;
+}
+
+.actinam a{
+  color: #d67140 !important;
+  font-size: 20px !important;
+}
+
