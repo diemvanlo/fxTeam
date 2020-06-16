@@ -8,8 +8,7 @@ const PRODUCT_API = "http://localhost:3000/product";
 
 @Component({
     selector: 'app-properties',
-    templateUrl: './properties.component.html',
-    styleUrls: ['./properties.component.css']
+    templateUrl: './properties.component.html'
 })
 export class PropertiesComponent implements OnInit {
     constructor(private userService: HttpServiceService) {
