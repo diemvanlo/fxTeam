@@ -3,18 +3,21 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --target=production"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.0",
     "@angular/cdk": "~9.1.0",
+    "@angular/cli": "~9.1.0",
     "@angular/common": "~9.1.0",
     "@angular/compiler": "~9.1.0",
+    "@angular/compiler-cli": "~9.1.0",
     "@angular/core": "~9.1.0",
     "@angular/forms": "~9.1.0",
     "@angular/http": "7.2.15",
@@ -33,6 +36,7 @@
     "bootstrap-material-design": "4.1.2",
     "bootstrap-notify": "3.1.3",
     "chartist": "0.11.2",
+    "express": "^4.17.1",
     "gl-matrix": "^3.3.0",
     "hammerjs": "2.0.8",
     "jquery": "^3.4.1",
@@ -44,14 +48,13 @@
     "popper.js": "1.15.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.11.1",
+    "typescript": "~3.8.3",
     "web-animations-js": "2.3.1",
     "webxr-polyfill": "^2.0.3",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.901.7",
-    "@angular/cli": "~9.1.0",
-    "@angular/compiler-cli": "~9.1.0",
     "@angular/language-service": "~9.1.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
@@ -66,7 +69,10 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "tslint": "~6.1.0"
+  },
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.4"
   }
 }
