@@ -4,15 +4,15 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/fxTeam'));
+app.use(express.static('./dist/realEstate'));
 
 app.get('/*', function(req,res) {
 
   if(req.url === '/') {
-    res.sendFile(path.join(__dirname,'/dist/fxTeam/index.html'));
+    res.sendFile(path.join(__dirname,'/dist/realEstate/index.html'));
   }
   else {
-    res.sendFile(path.join(__dirname, '/dist/fxTeam' + req.url))
+    res.sendFile(path.join(__dirname, '/dist/realEstate' + req.url))
   }
 
 });
