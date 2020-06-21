@@ -4,7 +4,7 @@ import {HttpServiceService} from "../../service/http-service.service";
 
 
 declare var $: any;
-const PRODUCT_API = "http://localhost:3000/product";
+const PRODUCT_API = "https://5eeebeed99b2440016bc08b1.mockapi.io/product";
 
 @Component({
     selector: 'app-properties',
