@@ -8,8 +8,7 @@ const PRODUCT_API = "https://5eeebeed99b2440016bc08b1.mockapi.io/product";
 
 @Component({
     selector: 'app-properties',
-    templateUrl: './properties.component.html',
-    styleUrls: ['./properties.component.css']
+    templateUrl: './properties.component.html'
 })
 export class PropertiesComponent implements OnInit {
     constructor(private userService: HttpServiceService) {
